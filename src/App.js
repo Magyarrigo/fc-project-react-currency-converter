@@ -1,11 +1,17 @@
+import "./App.css";
+
 import Header from "./elements/Header/Header";
-import Howtouse from "./elements/Howtouse/Howtouse";
+import Main from "./elements/Main/Main";
+
 
 function App() {
   return (
     <>
       <Header />
-      <Howtouse />
+      <Main/>
+
+      
+      
     </>
   );
 }

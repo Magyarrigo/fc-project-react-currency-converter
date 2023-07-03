@@ -1,8 +1,8 @@
 import "./Howtouse.css";
 
-import Container from "../../reusable/Container/Container";
-import Textarea from "../../reusable/Textarea/Textarea";
-import Secondtitle from "../../reusable/Secondtitle/Secondtitle";
+import Textarea from "../../../reusable/Textarea/Textarea";
+import Secondtitle from "../../../reusable/Secondtitle/Secondtitle";
+
 
 function Howtouse({ classname, contents }) {
   const firstText =
@@ -16,7 +16,7 @@ function Howtouse({ classname, contents }) {
   const textForHtwo = "Jak korzystać z kalkulatora";
 
   return (
-    <Container>
+    
       <div className="sectionContainer" id="description">
         <div className="descriptionContainer">
           <Secondtitle
@@ -30,7 +30,7 @@ function Howtouse({ classname, contents }) {
           <Textarea classname="descriptionContent" contents={fourthText} />
         </div>
       </div>
-    </Container>
+    
   );
 }
 
