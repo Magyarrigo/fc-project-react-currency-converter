@@ -1,4 +1,5 @@
 import Container from "../../reusable/Container/Container";
+import Aboutme from "./Aboutme/Aboutme";
 import Converter from "./Converter/Converter";
 import Howtouse from "./Howtouse/Howtouse";
 import "./Main.css";
@@ -11,6 +12,7 @@ function Main() {
         <Container>
             <Howtouse/>
             <Converter/>
+            <Aboutme/>
         </Container>
       </main>
     
