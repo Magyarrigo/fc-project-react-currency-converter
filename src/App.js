@@ -1,13 +1,13 @@
 import Header from "./elements/Header/Header";
-import Secondtitle from "./reusable/Secondtitle/Secondtitle";
-import Textarea from "./reusable/Textarea/Textarea";
-
+import Howtouse from "./elements/Howtouse/Howtouse";
 
 function App() {
-  return (<>
-  <Header/>
- 
-  </>);
+  return (
+    <>
+      <Header />
+      <Howtouse />
+    </>
+  );
 }
 
 export default App;
