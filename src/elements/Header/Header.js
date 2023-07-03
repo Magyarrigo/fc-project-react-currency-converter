@@ -1,6 +1,5 @@
 import "./Header.css";
 
-import Container from "../Container/Container";
 import Link from "./Link/Link";
 
 function Header() {
