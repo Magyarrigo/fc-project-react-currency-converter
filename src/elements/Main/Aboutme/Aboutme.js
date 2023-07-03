@@ -3,7 +3,7 @@ import Textarea from "../../../reusable/Textarea/Textarea";
 import "./Aboutme.css";
 
 const firstText =
-  "Jestem absolwentem Politechniki Budapeszteńskiej uzyskując tytuł magistra inżyniera Energetyki Jądrwoej. Już od czasów studiów interesowałem się programowaniem. W ubiegłym roku szczególną uwagę poświęciłem tworzeniu stron internetowych. Rozpocząłem naukę języka angielskiego. Ukończyłem kurs Frontend Developer w CODERSLAB oraz Javascript and React w FUTURE COLLARS.";
+  "Jestem absolwentem Politechniki Budapeszteńskiej uzyskując tytuł magistra inżyniera Energetyki Jądrowej. Już od czasów studiów interesowałem się programowaniem. W ubiegłym roku szczególną uwagę poświęciłem tworzeniu stron internetowych. Rozpocząłem naukę języka angielskiego. Ukończyłem kurs Frontend Developer w CODERSLAB oraz Javascript and React w FUTURE COLLARS.";
 const secondText =
   "Znajomość języków obcych: język węgierski - biegła w mowie i piśmie, język rosyjski - bardzo dobra w mowie i piśmie, język angielski poziom B2, język niemiecki - poziom B2.";
 
