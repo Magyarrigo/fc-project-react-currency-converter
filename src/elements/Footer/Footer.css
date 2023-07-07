@@ -34,18 +34,16 @@
 }
 .meansOfContact {
   display: flex;
- 
+
   padding-right: 1em;
   padding-left: 1em;
   align-items: center;
   color: var(--color-white);
 }
-.phoneIcon{
-  
+.phoneIcon {
   padding-right: 5px;
 }
-.mailIcon{
-  
+.mailIcon {
   padding-right: 5px;
 }
 .footerContainerMediaIcons {
