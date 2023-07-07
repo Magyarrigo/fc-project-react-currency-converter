@@ -32,7 +32,7 @@ function Converter() {
         }
       })
 
-      .catch((error) => alert(error + `: ` + `sprawdz link`));
+      .catch((error) => alert(error));
   };
 
   return (
