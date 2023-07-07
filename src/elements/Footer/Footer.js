@@ -1,10 +1,16 @@
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebook,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
     <footer className="footer" id="contact">
       <div className="footerContainer">
-        <div>
+        <div className = "logoContainer">
           <img className="logo" src="logo-magyarrigo.svg" alt="logoOfCompany" />
         </div>
         <div className="footerContainerButtons">
@@ -27,14 +33,9 @@ function Footer() {
           </div>
         </div>
         <div className="footerContainerMediaIcons">
-          <img src="Twitter.svg" alt="twitterIcon" />
-          <img src="Facebook.svg" alt="facebookIcon" />
-          <img
-            className="tiktokIcon"
-            id="tiktok"
-            src="Tiktok.jpg"
-            alt="tiktokIcon"
-          />
+          <FontAwesomeIcon icon={faTwitter} color="white" />
+          <FontAwesomeIcon icon={faFacebook} color="white" />
+          <FontAwesomeIcon icon={faTiktok} color="white" />
         </div>
       </div>
     </footer>

@@ -15,8 +15,8 @@
   padding-left: 2em;
   padding-right: 2em;
 }
-.logoAtFooter {
-  height: 28px;
+.logoContainer {
+  height: 150px;
 }
 .footerContainerButtons {
   width: 40%;
@@ -41,7 +41,4 @@
   width: 100px;
   display: flex;
   justify-content: space-between;
-}
-.tiktokIcon {
-  border-radius: 50%;
 }

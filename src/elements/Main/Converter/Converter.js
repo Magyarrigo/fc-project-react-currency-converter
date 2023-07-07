@@ -4,10 +4,21 @@ import { useState } from "react";
 import "./Converter.css";
 
 function Converter() {
+  
   const [result, setResult] = useState(0);
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const amount = event.currentTarget.elements.amount.value;
+    const isValueInvalid = isNaN(amount) || amount <= 0;
+    if (isValueInvalid) {
+      alert("wprowadź poprawną wartość: LICZBA DODATNIA");
+     
+      return;
+    }
+    
+
     const currency = event.currentTarget.elements.currencyName.value;
     axios
       .get(
@@ -24,9 +35,8 @@ function Converter() {
         } else {
         }
       })
-      .catch(() => {
-        console.log("cos");
-      });
+
+      .catch((error) => alert(error));
   };
 
   return (
