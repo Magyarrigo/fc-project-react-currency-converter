@@ -1,24 +1,19 @@
 import axios from "axios";
 import { useState } from "react";
-
 import "./Converter.css";
 
 function Converter() {
-  
   const [result, setResult] = useState(0);
-
-
   const handleSubmit = (event) => {
     event.preventDefault();
     const amount = event.currentTarget.elements.amount.value;
     const isValueInvalid = isNaN(amount) || amount <= 0;
     if (isValueInvalid) {
       alert("wprowadź poprawną wartość: LICZBA DODATNIA");
-     
+      setResult(null);
+      event.currentTarget.elements.amount.value = "";
       return;
     }
-    
-
     const currency = event.currentTarget.elements.currencyName.value;
     axios
       .get(
@@ -28,10 +23,11 @@ function Converter() {
         const isDataValid =
           response.data.rates?.length > 0 && response.data.rates[0].mid;
         if (isDataValid) {
-          const convertedAmount = (amount * response.data.rates[0].mid).toFixed(
+          const exchangeResult = (amount * response.data.rates[0].mid).toFixed(
             2
           );
-          setResult(convertedAmount);
+          setResult(exchangeResult);
+          console.log(result);
         } else {
         }
       })
