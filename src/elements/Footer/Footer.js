@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer" id="contact">
       <div className="footerContainer">
-        <div className = "logoContainer">
+        <div className="logoContainer">
           <img className="logo" src="logo-magyarrigo.svg" alt="logoOfCompany" />
         </div>
         <div className="footerContainerButtons">
@@ -24,11 +24,11 @@ function Footer() {
 
         <div className="footerContainerContact">
           <div className="meansOfContact" id="phone">
-            <img src="phone.svg" alt="phoneNumber" />
-            <p>+48 535 092 608</p>
+            <img src="phone.svg" className="phoneIcon" alt="phoneNumber" />
+            <p className="phoneNumber"> +48 535 062 908</p>
           </div>
           <div className="meansOfContact" id="mail">
-            <img src="mail.svg" alt="mailIcon" />
+            <img src="mail.svg" className="mailIcon" alt="mailIcon" />
             <p>b.drozd07@gmail.com</p>
           </div>
         </div>
