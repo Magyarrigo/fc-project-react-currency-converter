@@ -40,12 +40,12 @@
   align-items: center;
   color: var(--color-white);
 }
-.phoneIcon {
-  padding-right: 5px;
+.contact {
+  margin-left: 5px;
+  color: var(--color-white);
+  text-decoration: none;
 }
-.mailIcon {
-  padding-right: 5px;
-}
+
 .footerContainerMediaIcons {
   width: 5%;
   display: flex;

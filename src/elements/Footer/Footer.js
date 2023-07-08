@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
   faFacebook,
@@ -24,12 +25,16 @@ function Footer() {
 
         <div className="footerContainerContact">
           <div className="meansOfContact" id="phone">
-            <img src="phone.svg" className="phoneIcon" alt="phoneNumber" />
-            <p className="phoneNumber"> +48 535 062 908</p>
+            <FontAwesomeIcon icon={faPhone} color="white" />
+            <a className="contact" href="tel:+48535062908">
+              +48 535 062 908
+            </a>
           </div>
           <div className="meansOfContact" id="mail">
-            <img src="mail.svg" className="mailIcon" alt="mailIcon" />
-            <p>b.drozd07@gmail.com</p>
+            <FontAwesomeIcon icon={faEnvelope} color="white" />
+            <a className="contact" href="mailto:b.drozd07@gmail.com">
+              b.drozd07@gmail.com
+            </a>
           </div>
         </div>
         <div className="footerContainerMediaIcons">

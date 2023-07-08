@@ -4,12 +4,17 @@ import "./Converter.css";
 
 function Converter() {
   const [result, setResult] = useState(0);
+  const [error, setError] = useState("");
+
+  
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    setError("");
     const amount = event.currentTarget.elements.amount.value;
     const isValueInvalid = isNaN(amount) || amount <= 0;
     if (isValueInvalid) {
-      alert("wprowadź poprawną wartość: LICZBA DODATNIA");
+      setError("wprowadź poprawną wartość: LICZBA DODATNIA");
       setResult(null);
       event.currentTarget.elements.amount.value = "";
       return;
@@ -29,10 +34,11 @@ function Converter() {
           setResult(exchangeResult);
           console.log(result);
         } else {
+          setError("nieoczekiwany błąd sieci");
         }
       })
 
-      .catch((error) => alert(error));
+      .catch(() => setError("nieoczekiwany błąd sieci"));
   };
 
   return (
@@ -94,6 +100,7 @@ function Converter() {
             </div>
           </div>
         </form>
+        {error ? <p>{error}</p> : null}
       </div>
     </div>
   );
