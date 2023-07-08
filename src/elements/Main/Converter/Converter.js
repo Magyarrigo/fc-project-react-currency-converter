@@ -6,8 +6,6 @@ function Converter() {
   const [result, setResult] = useState(0);
   const [error, setError] = useState("");
 
-  
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setError("");
@@ -100,7 +98,7 @@ function Converter() {
             </div>
           </div>
         </form>
-        {error ? <p>{error}</p> : null}
+        {error ? <p className="errorField">{error}</p> : null}
       </div>
     </div>
   );
